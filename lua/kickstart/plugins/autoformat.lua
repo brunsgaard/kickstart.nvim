@@ -60,6 +60,16 @@ return {
               return
             end
 
+            -- I could not find a better way of doing this
+            --if client.name == "gopls" then
+            vim.lsp.buf.code_action {
+              context = {
+                only = { 'source.organizeImports' }
+              },
+              apply = true
+            }
+            --end
+
             vim.lsp.buf.format {
               async = false,
               filter = function(c)
