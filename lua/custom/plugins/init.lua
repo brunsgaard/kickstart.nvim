@@ -17,7 +17,7 @@ return {
 	{
 		require('onedark').setup {
 			-- toggle_style_list = { 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer', 'light' }, -- List of styles to toggle between
-			toggle_style_list = { 'dark', 'light' }, -- List of styles to toggle between
+			toggle_style_list = { 'light', 'dark' }, -- List of styles to toggle between
 			toggle_style_key = '<space>ts',
 		},
 	},
